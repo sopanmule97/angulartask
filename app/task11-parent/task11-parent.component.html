@@ -1,0 +1,13 @@
+<p>task11-parent works!</p>
+<h3>Write a Program to send rating (as number) from parent component to child component. In child 
+    component check whether rating is less than 6 then apply background color</h3>
+    <br><br>
+<input #num1 type="number" value="enter no">
+<button (click)="numTake(num1.value)">submit</button>
+
+<br>
+<hr>
+<app-task11-child [parentNum]="num"
+    [parentjson]="jsonobj"
+
+></app-task11-child>

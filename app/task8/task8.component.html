@@ -1,0 +1,10 @@
+<p>task8 works!</p>
+<h3>Check given number is even or odd using ngIf directive.</h3>
+<input (change)="check(num1.value)" #num1 type="number" >
+<button (click)="check(num1.value)" >check </button>
+<div *ngIf="num%2 == 0">
+    <h2>this is even</h2>
+</div>
+<div *ngIf="num%2 != 0">
+    <h2>this is odd</h2>
+</div>

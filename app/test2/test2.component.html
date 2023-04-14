@@ -1,0 +1,19 @@
+<p>test2 works!</p>
+<h3>Find square & cube of number on click event use as radio button. <br>Take number as hard coded for time 
+    being & display the <br> result in another text box, square & cube respectively.</h3>
+    <p >Please What you want to get value:</p>
+      <input #sel (click)="clickmethod(sel.value)" type="radio" name="fav_language" value="cube">
+      <label  for="html">cube</label><br>
+      <input #sel2 (click)="clickmethod(sel2.value)" type="radio" id="scs" name="fav_language" value="squre">
+      <label for="javascript">squre</label>
+<br> <br>
+    <img src="" alt="image">
+    <input #ref1 type="number">
+   &nbsp; &nbsp; <button (click)="claclulate(ref1.value)">Answer</button>
+    <br> <br>
+    <div [ngStyle]="jsonstyle">
+        {{check}}
+        <input  [value]="calculated">
+    </div>
+    
+    

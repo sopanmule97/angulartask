@@ -1,0 +1,12 @@
+<p>task6 works!</p>
+<h3>Using two-way binding, web page contains two input text & one button. One input text is used to take 
+    input from user another input text is used to display output. Find number is prime number or not click 
+    on button. 
+    e.g., input = 3 (From first input text) 
+    output = Number is prime number (on 2nd input text display this string).</h3>
+
+    <input #number  type="number">
+    <br> <br>
+    <button (click)="inNum(number.value)" >Answer</button>
+   
+    <input  type="text"  [value]="prime" name="" id="">

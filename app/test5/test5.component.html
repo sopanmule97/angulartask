@@ -1,0 +1,30 @@
+<p>test5 works!</p>
+<h3>Create web page containing Employee having fields id, name, salary & two buttons name viz add & 
+    remove button. When we click add button dynamic value is added also remove the particular data if 
+    click on remove button</h3>
+
+    <input #id type="number" [value]="num1" >
+    <input #name type="text" name="" id="">
+    <input #salary type="text" value="">
+
+
+<button (click)="add(id.value,name.value,salary.value)">add</button>
+<br><br>
+<table>
+    <thead>
+        <tr>
+            <td> id</td>
+            <td> name</td>
+            <td> salary</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr #idd *ngFor="let item of empdata ; index as i" >
+            <td> {{item.empid}}</td>
+            <td> {{item.empname}}</td>
+            <td> {{item.empsalary}}</td>
+            <button style="height: 20px; width: 50px;" (click)="remove(i)">delete</button>
+        </tr>
+    </tbody>
+
+</table>

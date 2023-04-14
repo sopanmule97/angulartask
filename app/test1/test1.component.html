@@ -1,0 +1,16 @@
+<br>
+
+<p>test1 works!</p>
+<h3>On click event change background color, text color of div tag text</h3>
+<label >Choose a color :</label>
+&nbsp; &nbsp; <select  #name2 name="colore" id="cars">
+  <option value="red">red</option>
+  <option value="blue">blue</option>
+  <option value="yellow">yellow</option>
+  <option value="green">green</option>
+</select>
+<button (click)="clickmethod(name2.value)">submit</button>
+<br><br> <hr>
+<div [style.background-color]="Colname" [style.color]="Colname=='black'?'white':''">
+<h2 >{{msg}}{{Colname}}</h2>
+</div>

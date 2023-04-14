@@ -1,0 +1,7 @@
+<p>task9 works!</p>
+<h3>Change the width of input box when user enter the number in input box (Asked in interview).
+</h3>
+
+<!-- &nbsp; &nbsp;<input #len (keydown)="keydownlen(len.value)" type="text" [value]="no" [style.width]="wid"  >
+<br><br> -->
+&nbsp; &nbsp;<input #len (keydown)="keydownlen(len.value)" type="text" [(ngModel)]="mysize" [size]="mysize" >
